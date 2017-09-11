@@ -41,4 +41,8 @@ public class CompanyService {
     public void delete(Long id) {
         companyRepository.delete(id);
     }
+    
+    public boolean exists(Long id){
+    	return companyRepository.exists(id);
+    }
 }

@@ -21,9 +21,9 @@ public class UserService {
     public User findByName(String name) {
         return userRepository.findByName(name);
     }
-
-    public User findByLogin(String login) {
-        return userRepository.findByLogin(login);
+    
+    public User findByMail(String name) {
+    	return userRepository.findByMail(name);
     }
 
     public User findByFederalID(String federalID) {
@@ -46,5 +46,9 @@ public class UserService {
 
     public void delete(Long id) {
         userRepository.delete(id);
+    }
+    
+    public boolean exists(Long id){
+    	return userRepository.exists(id);
     }
 }
