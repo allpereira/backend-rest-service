@@ -12,8 +12,8 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-import br.com.allpereira.services.AppUserDetails;
-import br.com.allpereira.services.AppUserDetailsService;
+import br.com.allpereira.security.AppUserDetails;
+import br.com.allpereira.security.AppUserDetailsService;
 
 @Configuration
 @EnableWebSecurity

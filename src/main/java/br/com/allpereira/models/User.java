@@ -37,8 +37,9 @@ public class User implements Serializable {
 	@ManyToOne
 	@JoinColumn(name = "company_id", nullable = false)
 	private Company company;
-	
-    @ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable(name = "users_privileges", joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "privilege_id", referencedColumnName = "id"))
-    private List<Privilege> privileges;
+
+	@ManyToMany(fetch = FetchType.EAGER)
+	@JoinTable(name = "users_privileges", joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "privilege_id", referencedColumnName = "id"))
+	private List<Privilege> privileges;
+
 }

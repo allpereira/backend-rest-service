@@ -14,7 +14,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-import br.com.allpereira.services.AppUserDetailsService;
+import br.com.allpereira.security.AppUserDetailsService;
 import br.com.allpereira.services.UserService;
 
 @Configuration
