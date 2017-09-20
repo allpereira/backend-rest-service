@@ -22,7 +22,21 @@ public class Company implements Serializable {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	private String name;
+	private String completeName;
 	private String federalID;
+	
+	private String postalCode;
+	private String address;
+	private String complement;
+	private String addressNumber;
+	private String district;
+	private String federalUnity;
+	private String city;
+	
+	private String telephone1;
+	private String telephone2;
+	private String mail;
+	
 
 	@OneToMany(mappedBy = "company")
 	@JsonBackReference(value = "users")
