@@ -7,5 +7,3 @@ A Restfull Service sample to demonstrates the use of follow technologies:
 * Lombok
 * Embedded Database - H2database
 
-Obs.: Currently in development.
-
